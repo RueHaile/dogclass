@@ -50,7 +50,8 @@ public:
         shuffle_deck(); // shuffle the deck
     }
 
-    void shuffle_deck() {
+	void shuffle_deck() {// Shuffle the deck using random_device and mt19937
+		//random_device from stackoverflow, sited above
         random_device rd;
         mt19937  rando(rd());
         shuffle(newdecks.begin(), newdecks.end(), rando);
